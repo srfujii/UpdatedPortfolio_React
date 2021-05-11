@@ -1,5 +1,5 @@
 import React from "react";
-// import "./style.css";
+import Project from "./Project";
 
 function Container(props) {
   return (
@@ -10,7 +10,7 @@ function Container(props) {
     </section>
     <section class = "grid-item content">
         <p class = "notopmargin">
-            <img class = "float-left" src = "./assets/images/susan-face-square.JPG" alt="Susan Face" /> Susan Fujii is the CEO and Founder of Kung Fu Finance, a business that has inspired and empowered thousands of individuals to master their money and grow their wealth through the philosophy of kung fu and the concept of mastery. She is launching a spinoff business focused on women this summer, Kung Fu Girl, whose mission is to empower women to master their minds and master their money so they can reclaim their confidence and live the abundant life they deserve— investing by women, for women.
+            <img class = "float-left" src = "./assets/images/susan-face-square.JPG" imgalt="Susan Face" /> Susan Fujii is the CEO and Founder of Kung Fu Finance, a business that has inspired and empowered thousands of individuals to master their money and grow their weimgalth through the philosophy of kung fu and the concept of mastery. She is launching a spinoff business focused on women this summer, Kung Fu Girl, whose mission is to empower women to master their minds and master their money so they can reclaim their confidence and live the abundant life they deserve— investing by women, for women.
         </p>
         <p>
             Susan has authored over 200 articles on personal finance and investing, has spoken in front of thousands, and is an active and avid angel investor herself. She’s a limited partner at Accelerate IT Ventures, a venture capital firm headquartered in La Jolla, CA, and has 20 years of experience working in the high tech and startup sector, most notably at Intel Corporation, where she traveled around the world supporting Andy Grove and Craig Barrett live on stage at prominent global tradeshows and events.</p>
@@ -25,18 +25,18 @@ function Container(props) {
 
     <section class = "grid-item content">
         <article>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/CAS_Bootcamp_Job_Search/index.html"><img class = "image" src = "./assets/images/01-project-job-search.png" alt = "Job Search Engine Project" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/Strong_Password_Generator/index.html"><img class = "image" src = "./assets/images/password-generator.png" alt = "Strong Password Generator" /></a></div> 
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/Timed_JavaScript_Coding_Quiz/index.html"><img class = "image" src = "./assets/images/coding-quiz.png" alt = "Coding Quiz Project" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/Weather_Dashboard/index.html"><img class = "image" src = "./assets/images/weather-data.png" alt = "Weather Data Project" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/Work_Day_Scheduler/index.html"><img class = "image" src = "./assets/images/work-day-schedule.png" alt = "Work Day Scheduler" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/README_Generator/"><img class = "image" src = "./assets/images/readme-generator.png" alt = "Professional README Generator" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/Team_Profile_Generator/"><img class = "image" src = "./assets/images/team-profile-generator.png" alt = "Team Profile Generator" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://srfujii.github.io/Experience_Next/"><img class = "image" src = "./assets/images/experience-next.png" alt = "Experience Next Full Stack Web App" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://github.com/srfujii/Express_Note_Taker"><img class = "image" src = "./assets/images/note-taker.png" alt = "Express Note Taker Web App" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://github.com/srfujii/Employee_Tracker_DB"><img class = "image" src = "./assets/images/employee-tracker.png" alt = "Employee Tracker DB Web App" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://github.com/srfujii/ORM_ECommerce_Backend"><img class = "image" src = "./assets/images/e-commerce-backend.png" alt = "ORM E-Commerce Web App" /></a></div>
-            <div><a target="_blank" rel="noreferrer" href="https://cryptic-gorge-79712.herokuapp.com/"><img class = "image" src = "./assets/images/tech-blog.png" alt = "Technology Blogging Web App" /></a></div>
+            <Project href="https://srfujii.github.io/CAS_Bootcamp_Job_Search/index.html" imgsrc="./assets/images/01-project-job-search.png" imgimgalt="Job Search Engine Project" />
+            <Project href="https://srfujii.github.io/Strong_Password_Generator/index.html" imgsrc="./assets/images/password-generator.png" imgalt = "Strong Password Generator" /> 
+            <Project href="https://srfujii.github.io/Timed_JavaScript_Coding_Quiz/index.html" imgsrc = "./assets/images/coding-quiz.png" imgalt = "Coding Quiz Project" />
+            <Project href="https://srfujii.github.io/Weather_Dashboard/index.html" imgsrc = "./assets/images/weather-data.png" imgalt = "Weather Data Project" />
+            <Project href="https://srfujii.github.io/Work_Day_Scheduler/index.html" imgsrc = "./assets/images/work-day-schedule.png" imgalt = "Work Day Scheduler" />
+            <Project href="https://srfujii.github.io/README_Generator/" imgsrc = "./assets/images/readme-generator.png" imgalt = "Professional README Generator" />
+            <Project href="https://srfujii.github.io/Team_Profile_Generator/" imgsrc = "./assets/images/team-profile-generator.png" imgalt = "Team Profile Generator" />
+            <Project href="https://srfujii.github.io/Experience_Next/" imgsrc = "./assets/images/experience-next.png" imgalt = "Experience Next Full Stack Web App" />
+            <Project href="https://github.com/srfujii/Express_Note_Taker" imgsrc = "./assets/images/note-taker.png" imgalt = "Express Note Taker Web App" />
+            <Project href="https://github.com/srfujii/Employee_Tracker_DB" imgsrc = "./assets/images/employee-tracker.png" imgalt = "Employee Tracker DB Web App" />
+            <Project href="https://github.com/srfujii/ORM_ECommerce_Backend" imgsrc = "./assets/images/e-commerce-backend.png" imgalt = "ORM E-Commerce Web App" />
+            <Project href="https://cryptic-gorge-79712.herokuapp.com/" imgsrc = "./assets/images/tech-blog.png" imgalt = "Technology Blogging Web App" />
         </article>
     </section>
     
