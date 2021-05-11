@@ -1,0 +1,345 @@
+/*****************************************/
+/*** Susan Fujii Portfolio Website CSS ***/
+/*****************************************/
+
+/******************** GLOBAL DECLARATIONS ***************/
+/*** Global Variables ***/
+:root {
+    --celedonblue: #3A7392;
+    --verdigrisbluegreen: #48A9A6;
+    --unsplashgreen: #4ea1b1;
+    --timberwolfgray: #E4DFDA;
+    --burleywoodyellow: #D4B483;
+    --fuzzywuzzyred: #C1666B;
+    --oxfordblue: #091540;
+    --richblack: #0D1821;
+    --browncoffee: #362C28;
+    --lightgray: #d9dcd6;
+    --horizonblue: #2a607c;
+}
+
+/*** Global declaration sets margins and padding to 0 ***/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*** Body element sets background color to light gray ***/
+body {
+    background-color: var(--unsplashgreen);
+    color: white;
+    font-size: 100%;
+    line-height: 1;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+}
+
+/*** Element Default Styles ***/
+a {
+    color: --unsplashgreen;
+    text-decoration: none;
+}
+
+p {
+    margin: 2% 0;
+    line-height: 1.5;
+}
+/***************** END GLOBAL DECLARATIONS ***************/
+
+
+/******************** HEADER ******************/
+/*** HEADER FLEXBOX FOR NAME AND NAVBAR     ***/
+header,
+.heading,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/*** Space out the name to the left and the navbar to the right ***/
+header {
+    padding: 0.5% 2% 0.5% 0;
+    background-color: var(--richblack);
+    justify-content: space-between;
+}
+
+/*** Give our Name a nice width ***/
+.heading {
+    width: 250px;
+}
+
+/* Name */
+header h1 {
+    width: 100%;
+    font-size: 200%;
+    color: var(--richblack);
+    background-color: var(--unsplashgreen);
+    padding: 4% 1% 4% 3%;
+}
+
+/* Navigation Bar */
+header nav {
+    font-size: 150%;
+}
+
+/* Specifies no bullets or numbers for our nav bar list */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Each navigation link list item */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Link style */
+header nav ul li a {
+    color: var(--unsplashgreen);
+    font-weight: bold;
+}
+
+/*** Change the appearance on hover for accessibility ***/
+header nav ul li a:hover {
+    cursor: pointer;
+    background-color: var(--unsplashgreen);
+    color: var(--richblack)
+}
+/******************* END HEADER ***************/
+
+
+/******************* HERO IMAGE ***************/
+/*** Hero Banner Image Under Header ***/
+/*** Flexbox for Hero Image and Subtitle for accessibilty and ease of media queries ***/
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 40vh;
+    padding: 2% 2% 2% 0;
+    margin-bottom: 3%;
+    background-image: url("../images/usgs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*** Hero Subtitle Styling ***/
+.hero h2 {
+    padding: 1%;
+    background-color: var(--unsplashgreen);
+    color: var(--richblack);
+}
+/******************** END HERO ****************/
+
+
+/******************* MAIN CONTENT *********************/
+/*** Grid Layout to set up two columns & 3 rows for ***/
+/*** our outer content layout                       ***/
+/******************************************************/
+
+/*** Container class for our content grid ***/
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: var(--unsplashgreen);
+    padding: 1% 1% 5% 1%;
+    row-gap: 2%;
+    margin-bottom: 5%;
+}
+
+/*** Individual grid items within our container ***/
+.grid-item {
+    background-color: var(--unsplashgreen);
+    margin: 0 0 0 0;
+    padding: 0;
+    color: white;
+}
+
+/*** Title class for the Titles (About Me, Work, Contact Me) ***/
+.title {
+    border-right: white solid 5px;
+    text-align: right;
+    font-size: 200%;
+    padding-right: 5%;
+}
+
+/*** Content class for the content in each section ***/
+.content {
+    text-align: left;
+    padding-left: 4%;
+}
+
+/*** Special class to eliminate top margin where needed ***/
+.notopmargin {
+    margin-top: 0;
+}
+
+/*** Special class to eliminate bottom margin where needed ***/
+.nobottommargin {
+    margin-bottom: 0;
+}
+
+/*** Used to float Headshot image in About Me to left of text ***/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.empty {
+    border-right: 0;
+}
+
+/******************* FLEXBOX FOR WORK SAMPLES **************/
+/*** Flexbox container ***/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 22px;
+}
+
+/*** Image class to display images for our work samples ***/
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 5px solid white;
+}
+
+/*** Change the image opacity for accessibility to show user when hovering over it ***/
+a:hover .image {
+    opacity: 0.3;
+}
+/******************* END FLEXBOX FOR WORK SAMPLES **************/
+
+
+/***************** Flexbox for Contact Me Items ****************/
+/*** Our Contact Me Flexbox Container ***/
+.contactmebox {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+}
+
+/*** Give links an underline for accessibility to show they are clickable ***/
+.contactme > a {
+    text-decoration: underline;
+}
+
+/*** Default link color ***/
+.contactme > a:link {
+    color: white;
+}
+
+/*** Visited link color ***/
+.contactme > a:visited {
+    color: white;
+}
+
+/*** Change link appearance when user hovers over it for accessibility ***/
+.contactme > a:hover {
+    background-color: var(--richblack);
+}
+/*************** END CONTACT ME ******************/
+
+/*************** FOOTER **************************/
+footer {
+    background-color: var(--richblack);
+    text-align: center;
+    padding: 2%;
+    color: var(--unsplashgreen);
+}
+
+
+/*************** MEDIA QUERIES *******************/
+
+/*** At 1100px or less change our body grid to be one column instead of two ***/
+@media screen and (max-width: 1100px) {
+    /*** Change Main Body Grid Container to be one column wide ***/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 95%;
+        padding: 1%;
+        row-gap: 2%;
+        margin-bottom: 5%;
+    }
+
+    /*** Remove right border and align titles to center for Title class (About Me, Work, Contact Me) ***/
+    .title {
+        border-right: 0;
+        text-align: center;
+        font-size: 200%;
+        padding-right: 0;
+    }
+
+    /*** Center the Flexbox work samples ***/
+    article {
+        justify-content: center;
+    }
+
+    /*** Change direction of Contact Me Flexbox items from Row to Column and center them ***/
+    .contactmebox {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-around;
+        align-items: center;
+    }
+
+    /*** Give the items a little padding ***/
+    .contactme {
+        padding: 2% 2%;
+    }
+}
+
+/*** At 900px or less change our header container to be column instead of row ***/
+/*** Note navbar is still a row within the header container ***/
+@media screen and (max-width: 900px) {
+    /*** Change Header FlexBox to be Column ***/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Name is now centered */
+    header h1 {
+        text-align: center;
+    }
+
+    /*** Hero Subtitle  is now centered ***/
+    .hero {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*** At 600px or less change our header navbar to be a column ***/ 
+@media screen and (max-width: 600px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 481px;
+        padding-bottom: 2%;
+    }
+    
+    header nav ul li {
+        padding: 1% 0;
+        margin-left: 0;
+    }
+}
+
+/*** At 480px or less change About Me paragraph text to be center aligned ***/
+@media screen and (max-width: 480px) {
+
+    .content p {
+        text-align: center;
+    }
+}
