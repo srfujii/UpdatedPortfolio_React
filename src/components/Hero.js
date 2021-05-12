@@ -1,9 +1,8 @@
 import React from "react";
-// import "./style.css";
 
 function Hero(props) {
     return (
-        <div class="hero">
+        <div className="hero">
             <h2>while (!(succeed = try()));</h2>
         </div>
     );

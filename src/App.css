@@ -1,38 +1,732 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
+    text-align: center;
+  }
+  
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
   }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+  
+  body {
+    margin: 0;
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+
+/*****************************************/
+/*** Susan Fujii Portfolio Website CSS ***/
+/*****************************************/
+
+/******************** GLOBAL DECLARATIONS ***************/
+/*** Global Variables ***/
+:root {
+    --celedonblue: #3A7392;
+    --verdigrisbluegreen: #48A9A6;
+    --unsplashgreen: #4ea1b1;
+    --timberwolfgray: #E4DFDA;
+    --burleywoodyellow: #D4B483;
+    --fuzzywuzzyred: #C1666B;
+    --oxfordblue: #091540;
+    --richblack: #0D1821;
+    --browncoffee: #362C28;
+    --lightgray: #d9dcd6;
+    --horizonblue: #2a607c;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*** Global declaration sets margins and padding to 0 ***/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.App-link {
-  color: #61dafb;
+/*** Body element sets background color to light gray ***/
+body {
+    background-color: var(--unsplashgreen);
+    color: white;
+    font-size: 100%;
+    line-height: 1;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/*** Element Default Styles ***/
+a {
+    color: --unsplashgreen;
+    text-decoration: none;
 }
+
+p {
+    margin: 2% 0;
+    font-size: 120%;
+    line-height: 1.5;
+}
+/***************** END GLOBAL DECLARATIONS ***************/
+
+
+/******************** HEADER ******************/
+/*** HEADER FLEXBOX FOR NAME AND NAVBAR     ***/
+header,
+.heading,
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/*** Space out the name to the left and the navbar to the right ***/
+header {
+    padding: 0.5% 2% 0.5% 0;
+    background-color: var(--richblack);
+    justify-content: space-between;
+}
+
+/*** Give our Name a nice width ***/
+.heading {
+    width: 250px;
+}
+
+/* Name */
+header h1 {
+    width: 100%;
+    font-size: 200%;
+    color: var(--richblack);
+    background-color: var(--unsplashgreen);
+    padding: 4% 1% 4% 3%;
+}
+
+/* Navigation Bar */
+header nav {
+    font-size: 150%;
+}
+
+/* Specifies no bullets or numbers for our nav bar list */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Each navigation link list item */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* Link style */
+header nav ul li a {
+    color: var(--unsplashgreen);
+    font-weight: bold;
+}
+
+/*** Change the appearance on hover for accessibility ***/
+header nav ul li a:hover {
+    cursor: pointer;
+    background-color: var(--unsplashgreen);
+    color: var(--richblack)
+}
+/******************* END HEADER ***************/
+
+
+/******************* HERO IMAGE ***************/
+/*** Hero Banner Image Under Header ***/
+/*** Flexbox for Hero Image and Subtitle for accessibilty and ease of media queries ***/
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 40vh;
+    padding: 2% 2% 2% 0;
+    margin-bottom: 3%;
+    background-image: url("./assets/images/usgs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*** Hero Subtitle Styling ***/
+.hero h2 {
+    padding: 1%;
+    background-color: var(--unsplashgreen);
+    color: var(--richblack);
+}
+/******************** END HERO ****************/
+
+
+/******************* MAIN CONTENT *********************/
+/*** Grid Layout to set up two columns & 3 rows for ***/
+/*** our outer content layout                       ***/
+/******************************************************/
+
+/*** Container class for our content grid ***/
+.grid-container {
+    display: grid;
+    padding: 1% 1% 5% 1%;
+}
+
+/*** Individual grid items within our container ***/
+.grid-item {
+    background-color: var(--unsplashgreen);
+    margin: 0 0 0 0;
+    padding: 0;
+    color: white;
+}
+
+/*** Title class for the Titles (About Me, Work, Contact Me) ***/
+.title {
+    text-align: left;
+    font-size: 200%;
+    padding-right: 5%;
+    padding-bottom: 2%
+}
+
+/*** Content class for the content in each section ***/
+.content {
+    text-align: left;
+    padding-left: 4%;
+}
+
+/*** Special class to eliminate top margin where needed ***/
+.notopmargin {
+    margin-top: 0;
+}
+
+/*** Special class to eliminate bottom margin where needed ***/
+.nobottommargin {
+    margin-bottom: 0;
+}
+
+/*** Used to float Headshot image in About Me to left of text ***/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.empty {
+    border-right: 0;
+}
+
+/******************* FLEXBOX FOR WORK SAMPLES **************/
+/*** Flexbox container ***/
+article {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 22px;
+}
+
+/*** Image class to display images for our work samples ***/
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 5px solid white;
+}
+
+/*** Change the image opacity for accessibility to show user when hovering over it ***/
+a:hover .image {
+    opacity: 0.3;
+}
+/******************* END FLEXBOX FOR WORK SAMPLES **************/
+
+
+/***************** Flexbox for Contact Me Items ****************/
+/*** Our Contact Me Flexbox Container ***/
+.contactmebox {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+}
+
+/*** Give links an underline for accessibility to show they are clickable ***/
+.contactme > a {
+    text-decoration: underline;
+}
+
+/*** Default link color ***/
+.contactme > a:link {
+    color: white;
+}
+
+/*** Visited link color ***/
+.contactme > a:visited {
+    color: white;
+}
+
+/*** Change link appearance when user hovers over it for accessibility ***/
+.contactme > a:hover {
+    background-color: var(--richblack);
+}
+/*************** END CONTACT ME ******************/
+
+/*************** FOOTER **************************/
+footer {
+    background-color: var(--richblack);
+    text-align: center;
+    padding: 2%;
+    color: var(--unsplashgreen);
+}
+
+
+/*************** MEDIA QUERIES *******************/
+
+/*** At 1100px or less change our body grid to be one column instead of two ***/
+@media screen and (max-width: 1100px) {
+    /*** Change Main Body Grid Container to be one column wide ***/
+    .grid-container {
+        display: grid;
+        grid-template-columns: 95%;
+        padding: 1%;
+        row-gap: 2%;
+        margin-bottom: 5%;
+    }
+
+    /*** Remove right border and align titles to center for Title class (About Me, Work, Contact Me) ***/
+    .title {
+        border-right: 0;
+        text-align: center;
+        font-size: 200%;
+        padding-right: 0;
+    }
+
+    /*** Center the Flexbox work samples ***/
+    article {
+        justify-content: center;
+    }
+
+    /*** Change direction of Contact Me Flexbox items from Row to Column and center them ***/
+    .contactmebox {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: space-around;
+        align-items: center;
+    }
+
+    /*** Give the items a little padding ***/
+    .contactme {
+        padding: 2% 2%;
+    }
+}
+
+/*** At 900px or less change our header container to be column instead of row ***/
+/*** Note navbar is still a row within the header container ***/
+@media screen and (max-width: 900px) {
+    /*** Change Header FlexBox to be Column ***/
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Name is now centered */
+    header h1 {
+        text-align: center;
+    }
+
+    /*** Hero Subtitle  is now centered ***/
+    .hero {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*** At 600px or less change our header navbar to be a column ***/ 
+@media screen and (max-width: 600px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 481px;
+        padding-bottom: 2%;
+    }
+    
+    header nav ul li {
+        padding: 1% 0;
+        margin-left: 0;
+    }
+}
+
+/*** At 480px or less change About Me paragraph text to be center aligned ***/
+@media screen and (max-width: 480px) {
+
+    .content p {
+        text-align: center;
+    }
+}
+
