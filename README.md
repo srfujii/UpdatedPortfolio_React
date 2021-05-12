@@ -18,7 +18,7 @@
   * [Tests](#tests)
   * [Questions](#questions)
  
- 
+
   ## Installation
 
   This app is deployed live on GitHub Pages, and you can find it live here:
@@ -50,12 +50,12 @@
 
   ## Screenshots
 
-  ![Screenshot](./public/img/image01.png)
-  ![Screenshot](./public/img/image02.png)
-  ![Screenshot](./public/img/image03.png)
-  ![Screenshot](./public/img/image04.png)
-  ![Screenshot](./public/img/image05.png)
-  ![Screenshot](./public/img/image06.png)
+  ![Screenshot](./image01.png)
+  ![Screenshot](./image02.png)
+  ![Screenshot](./image03.png)
+  ![Screenshot](./image04.png)
+  ![Screenshot](./image05.png)
+  ![Screenshot](./image06.png)
 
 
   ## License
