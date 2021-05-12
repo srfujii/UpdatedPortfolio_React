@@ -1,22 +1,37 @@
 {
   "files": {
-    "main.css": "/UpdatedPortfolio_React/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/UpdatedPortfolio_React/static/js/main.e7a02032.chunk.js",
-    "main.js.map": "/UpdatedPortfolio_React/static/js/main.e7a02032.chunk.js.map",
-    "runtime-main.js": "/UpdatedPortfolio_React/static/js/runtime-main.6a4510e1.js",
-    "runtime-main.js.map": "/UpdatedPortfolio_React/static/js/runtime-main.6a4510e1.js.map",
-    "static/js/2.f4f9ea14.chunk.js": "/UpdatedPortfolio_React/static/js/2.f4f9ea14.chunk.js",
-    "static/js/2.f4f9ea14.chunk.js.map": "/UpdatedPortfolio_React/static/js/2.f4f9ea14.chunk.js.map",
-    "static/js/3.22798fa6.chunk.js": "/UpdatedPortfolio_React/static/js/3.22798fa6.chunk.js",
-    "static/js/3.22798fa6.chunk.js.map": "/UpdatedPortfolio_React/static/js/3.22798fa6.chunk.js.map",
+    "main.css": "/UpdatedPortfolio_React/static/css/main.725d2f3e.chunk.css",
+    "main.js": "/UpdatedPortfolio_React/static/js/main.fe9f61c9.chunk.js",
+    "main.js.map": "/UpdatedPortfolio_React/static/js/main.fe9f61c9.chunk.js.map",
+    "runtime-main.js": "/UpdatedPortfolio_React/static/js/runtime-main.73bb2e8e.js",
+    "runtime-main.js.map": "/UpdatedPortfolio_React/static/js/runtime-main.73bb2e8e.js.map",
+    "static/js/2.40293dbc.chunk.js": "/UpdatedPortfolio_React/static/js/2.40293dbc.chunk.js",
+    "static/js/2.40293dbc.chunk.js.map": "/UpdatedPortfolio_React/static/js/2.40293dbc.chunk.js.map",
+    "static/js/3.b6edd5fa.chunk.js": "/UpdatedPortfolio_React/static/js/3.b6edd5fa.chunk.js",
+    "static/js/3.b6edd5fa.chunk.js.map": "/UpdatedPortfolio_React/static/js/3.b6edd5fa.chunk.js.map",
     "index.html": "/UpdatedPortfolio_React/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/UpdatedPortfolio_React/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.f4f9ea14.chunk.js.LICENSE.txt": "/UpdatedPortfolio_React/static/js/2.f4f9ea14.chunk.js.LICENSE.txt"
+    "static/css/main.725d2f3e.chunk.css.map": "/UpdatedPortfolio_React/static/css/main.725d2f3e.chunk.css.map",
+    "static/js/2.40293dbc.chunk.js.LICENSE.txt": "/UpdatedPortfolio_React/static/js/2.40293dbc.chunk.js.LICENSE.txt",
+    "static/media/01-project-job-search.796db617.png": "/UpdatedPortfolio_React/static/media/01-project-job-search.796db617.png",
+    "static/media/Susan_Fujii_Resume.2bfbfd2c.PDF": "/UpdatedPortfolio_React/static/media/Susan_Fujii_Resume.2bfbfd2c.PDF",
+    "static/media/coding-quiz.77c2c3bd.png": "/UpdatedPortfolio_React/static/media/coding-quiz.77c2c3bd.png",
+    "static/media/e-commerce-backend.270fb5a2.png": "/UpdatedPortfolio_React/static/media/e-commerce-backend.270fb5a2.png",
+    "static/media/employee-tracker.3388a2b6.png": "/UpdatedPortfolio_React/static/media/employee-tracker.3388a2b6.png",
+    "static/media/experience-next.b309e946.png": "/UpdatedPortfolio_React/static/media/experience-next.b309e946.png",
+    "static/media/note-taker.4e0b6cd1.png": "/UpdatedPortfolio_React/static/media/note-taker.4e0b6cd1.png",
+    "static/media/password-generator.8ddba6e2.png": "/UpdatedPortfolio_React/static/media/password-generator.8ddba6e2.png",
+    "static/media/readme-generator.5f0a1a35.png": "/UpdatedPortfolio_React/static/media/readme-generator.5f0a1a35.png",
+    "static/media/susan-face-square.7868981d.JPG": "/UpdatedPortfolio_React/static/media/susan-face-square.7868981d.JPG",
+    "static/media/team-profile-generator.948383f7.png": "/UpdatedPortfolio_React/static/media/team-profile-generator.948383f7.png",
+    "static/media/tech-blog.ba02090c.png": "/UpdatedPortfolio_React/static/media/tech-blog.ba02090c.png",
+    "static/media/App.css": "/UpdatedPortfolio_React/static/media/usgs-unsplash.1d85b5c4.jpg",
+    "static/media/weather-data.493a022a.png": "/UpdatedPortfolio_React/static/media/weather-data.493a022a.png",
+    "static/media/work-day-schedule.866f8f30.png": "/UpdatedPortfolio_React/static/media/work-day-schedule.866f8f30.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.6a4510e1.js",
-    "static/js/2.f4f9ea14.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
-    "static/js/main.e7a02032.chunk.js"
+    "static/js/runtime-main.73bb2e8e.js",
+    "static/js/2.40293dbc.chunk.js",
+    "static/css/main.725d2f3e.chunk.css",
+    "static/js/main.fe9f61c9.chunk.js"
   ]
 }
