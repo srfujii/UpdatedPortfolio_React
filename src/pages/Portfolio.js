@@ -13,6 +13,7 @@ import NoteTaker from "../assets/images/note-taker.png";
 import EmployeeTracker from "../assets/images/employee-tracker.png";
 import ECommerce from "../assets/images/e-commerce-backend.png";
 import TechBlog from "../assets/images/tech-blog.png";
+import GoogleBooksAPI from "../assets/images/google-books-mern.png";
 
 function Portfolio() {
   return (
@@ -23,6 +24,7 @@ function Portfolio() {
         <section class = "grid-item content">
             <article>
                 <Project href="https://srfujii.github.io/CAS_Bootcamp_Job_Search/index.html" imgsrc={Project01} imgalt="Job Search Engine Project" />
+                <Project href="https://murmuring-citadel-81538.herokuapp.com/" imgsrc={GoogleBooksAPI} imgalt="MERN Google Books API Save Favorites Search App" />
                 <Project href="https://srfujii.github.io/Strong_Password_Generator/index.html" imgsrc={PasswordGenerator} imgalt="Strong Password Generator" />
                 <Project href="https://srfujii.github.io/Timed_JavaScript_Coding_Quiz/index.html" imgsrc={CodingQuiz} imgalt="Coding Quiz Project" />
                 <Project href="https://srfujii.github.io/Weather_Dashboard/index.html" imgsrc={WeatherData} imgalt="Weather Data Project" />
