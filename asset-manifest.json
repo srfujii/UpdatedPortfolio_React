@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/UpdatedPortfolio_React/static/css/main.725d2f3e.chunk.css",
-    "main.js": "/UpdatedPortfolio_React/static/js/main.fe9f61c9.chunk.js",
-    "main.js.map": "/UpdatedPortfolio_React/static/js/main.fe9f61c9.chunk.js.map",
+    "main.js": "/UpdatedPortfolio_React/static/js/main.a6117c1f.chunk.js",
+    "main.js.map": "/UpdatedPortfolio_React/static/js/main.a6117c1f.chunk.js.map",
     "runtime-main.js": "/UpdatedPortfolio_React/static/js/runtime-main.73bb2e8e.js",
     "runtime-main.js.map": "/UpdatedPortfolio_React/static/js/runtime-main.73bb2e8e.js.map",
     "static/js/2.40293dbc.chunk.js": "/UpdatedPortfolio_React/static/js/2.40293dbc.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/e-commerce-backend.270fb5a2.png": "/UpdatedPortfolio_React/static/media/e-commerce-backend.270fb5a2.png",
     "static/media/employee-tracker.3388a2b6.png": "/UpdatedPortfolio_React/static/media/employee-tracker.3388a2b6.png",
     "static/media/experience-next.b309e946.png": "/UpdatedPortfolio_React/static/media/experience-next.b309e946.png",
+    "static/media/google-books-mern.c0abbc0f.png": "/UpdatedPortfolio_React/static/media/google-books-mern.c0abbc0f.png",
     "static/media/note-taker.4e0b6cd1.png": "/UpdatedPortfolio_React/static/media/note-taker.4e0b6cd1.png",
     "static/media/password-generator.8ddba6e2.png": "/UpdatedPortfolio_React/static/media/password-generator.8ddba6e2.png",
     "static/media/readme-generator.5f0a1a35.png": "/UpdatedPortfolio_React/static/media/readme-generator.5f0a1a35.png",
@@ -32,6 +33,6 @@
     "static/js/runtime-main.73bb2e8e.js",
     "static/js/2.40293dbc.chunk.js",
     "static/css/main.725d2f3e.chunk.css",
-    "static/js/main.fe9f61c9.chunk.js"
+    "static/js/main.a6117c1f.chunk.js"
   ]
 }
